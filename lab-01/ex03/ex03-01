@@ -1,0 +1,14 @@
+def tinh_tong_so_chan(lst):
+    tong = 0
+    for i in lst:
+        if i % 2 == 0:
+            tong += num
+    return tong
+
+#nhap danh sach tu nguoi dung
+input_list = input("Nhap danh sach cac so, cach bang dau phay: ")
+numbers = list(map(int, input_list.split(',')))
+
+#su dung ham va in kqua
+tong_chan = tinh_tong_so_chan(numbers)
+print("Tong cac so chan trong danh sach la: ", tong_chan)
