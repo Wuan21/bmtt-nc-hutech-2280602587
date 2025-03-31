@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Caesar Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <tr><td style="text-align: center; font-weight: bold;
+            font-size: 25px;">CAESAR CIPHER</td></tr>
+            <tr><td style="font-weight: bold; color:  bule">ENCRYPTION</td></tr>
+            <tr>
+                <td>
+                    <form method="POST" action="/encrypt">
+                        <div class="mb-3">
+                            <label class="from-lable">Plain text:</label>
+                            <input type="text" class="from-control"
+                            name="inputPlainText" placeholder="Input Plain
+                            Text" required autofocus/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="from-lable">Key:</label>
+                            <input type="number" class="from-control"
+                            name="inputKeyPlain" placeholder="Input Key"
+                            required/>
+                        </div>
+                        <button type="submit" class="btn
+                        btn-primary">Encrypt</button>
+                    </form>
+                </td>
+            </tr>
+
+            <tr><td style="font-weight: bold; color:  bule">DECRYPTION</
+            td></tr>
+            <tr>
+                <td>
+                    <form method="POST" action="/decrypt">
+                        <div class="mb-3">
+                            <label class="from-lable">Cipher text:</label>
+                            <input type="text" class="from-control"
+                            name="inputCipherText" placeholder="Input
+                            Cipher Text" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="from-lable">Key:</label>
+                            <input type="number" class="from-control"
+                            name="inputKeyCipher" placeholder="Input Key"
+                            required/>
+                        </div>
+                        <button type="submit" class="btn
+                        btn-success">Decrypt</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
